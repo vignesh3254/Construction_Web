@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(212, 74, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: #111;
+    border: 2px solid #080808;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #160808;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #f0e9e9;
+}
+
+h2 {
+    cursor: default;
+    color: #080808;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero {
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.heading h1 {
+    color: #ff6347;
+    font-size: 55px;
+    text-align: center;
+    margin: 35px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.hero-content {
+    flex: 1;
+    margin: 0 25px;
+    animation: fadeInUp 2s ease;
+}
+
+.hero-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.hero-content button {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.hero-content button:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
+
+.hero-image {
+    flex: 1;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 10px 0;
+    }
+
+    .heading h1 {
+        font-size: 45px;
+        margin-top: 30px;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 40px;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin: 35px 0;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .hero-content button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
