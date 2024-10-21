@@ -62,13 +62,6 @@ h3 {
     justify-content: center;
     align-items: center;
 }
-
-@keyframes animate {
-    0% { color: hwb(27 13% 9%); }
-    50% { color: rgb(56, 88, 84); }
-    100% { color: rgb(218, 31, 31); }
-}
-
 .front {
     position: relative;
     margin: 60px;
