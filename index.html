@@ -5,19 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRABU CONSTRUCTIONS</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/logo.png" type="image/png">
 </head>
 
 <body>
     <header>
-        <h2>PRABU & PRABU CONSTRUCTIONS</h2>
+        <h2 id="h2">PRABU & PRABU CONSTRUCTIONS</h2>
         <nav>
             <ul>
-                <li><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                <li><a href="./About/about.html"><i class="fa fa-user" aria-hidden="true"></i> About Us</a></li>
-                <li><a href="./Contact/contact.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a></li>
+                <li>
+                    <a href="./index.html" class="home"><ion-icon
+                        name="home-outline"></ion-icon>Home</a>
+                </li>
+                <li>
+                    <a href="./About/about.html" class="about"><ion-icon name="person-outline"></ion-icon>About Us</a>
+                </li>
+                <li>
+                    <a href="./Contact/contact.html" class="contact"><ion-icon name="call-outline"></ion-icon>Contact Us</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -53,6 +61,7 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

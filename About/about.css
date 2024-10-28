@@ -6,34 +6,43 @@
 }
 
 header {
-    background-color: rgb(212, 74, 39);
+    background-color: rgb(235, 64, 21);
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 15px 20px;
-    color: #111;
-    border: 2px solid #080808;
+    color: rgb(17, 17, 16);
+    border-color: #080808;
+    border-style: solid;
 }
 
 nav ul {
     display: flex;
-    padding: 0;
-    list-style: none;
+    align-items: center;
 }
 
 nav li {
-    margin: 0 20px;
+    list-style: none;
+    margin: 0 15px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 a {
     text-decoration: none;
     color: #160808;
     font-size: 1rem;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    display: flex;
 }
 
 a:hover {
-    color: #f0e9e9;
+    color: rgb(240, 233, 233);
+}
+
+ion-icon {
+    padding-right: 5px;
 }
 
 h2 {
@@ -42,11 +51,15 @@ h2 {
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero {
     background-color: #f8f8f8;
     overflow: hidden;
+
 }
 
 .heading h1 {
@@ -60,14 +73,13 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    margin: 65px auto;
+    
 }
 
 .hero-content {
     flex: 1;
     margin: 0 25px;
-    animation: fadeInUp 2s ease;
+    animation:  2s ease;
 }
 
 .hero-content h2 {
@@ -83,27 +95,11 @@ h2 {
     color: #666;
 }
 
-.hero-content button {
-    display: inline-block;
-    background-color: #ff4500;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 5px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease-out;
-}
-
-.hero-content button:hover {
-    background-color: #ff6347;
-    transform: scale(1.1);
-}
 
 .hero-image {
     flex: 1;
     margin: auto;
-    animation:  2s ease;
+    animation: 2s ease;
 }
 
 img {
@@ -112,48 +108,37 @@ img {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 991px) {
+    a{
+        width: 0;
+        padding-right:60px;
+        padding-left: 5px;
+        
     }
-    
-    nav li {
-        margin: 10px 0;
-    }
-
-    .heading h1 {
-        font-size: 45px;
-        margin-top: 30px;
-    }
-
     .container {
-        width: 100%;
-        flex-direction: column;
-        margin: 0;
-        padding: 0 40px;
+        display: block;
     }
 
     .hero-content {
+        text-align: center;
+        justify-content: center;
+        margin-bottom:30px ;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
         width: 100%;
-        margin: 35px 0;
+        text-align: left;
     }
+}
 
-    .hero-content h2 {
-        font-size: 30px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-
-    .hero-content button {
-        font-size: 16px;
-        padding: 8px 16px;
-    }
-
-    .hero-image {
+@media (max-width: 480px) {
+    .full .item {
         width: 100%;
+        margin: 10px 0;
     }
 }

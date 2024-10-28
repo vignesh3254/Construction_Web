@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 body{
     background-color: #666;
+    
 }
 header {
-    background-color: rgb(212, 74, 39);
+    background-color: rgb(235, 64, 21);
     display: flex;
     justify-content: space-between;
     padding: 15px 20px;
@@ -16,14 +18,15 @@ header {
     border-color: #080808;
     border-style: solid;
 }
+
 nav ul {
-    list-style: none;
     display: flex;
     align-items: center;
 }
 
 nav li {
-    margin: 0 20px;
+    list-style: none;
+    margin: 0 15px;
     font-weight: 600;
     cursor: pointer;
 }
@@ -32,27 +35,36 @@ a {
     text-decoration: none;
     color: #160808;
     font-size: 1rem;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    display: flex;
 }
+
 
 a:hover {
     color: rgb(240, 233, 233);
 }
-
+ion-icon{
+    padding-right:5px;
+}
 h2 {
     cursor: default;
     color: #080808;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact {
-    padding: 50px;
+    padding: 20px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;  
     background-color: #666;  
-    color: #e43b3b;
 }
 
 .contact .content {
@@ -62,7 +74,7 @@ h2 {
 }
 
 h1 {
-    color: #ff6347;
+    color: #df1122;
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
@@ -97,11 +109,13 @@ h1 {
     width: 60px;
     height: 60px;
     background: #e9e4e4;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     font-size: 22px;
+    padding-left: 5px;
 }
 
 .container .contactInfo .box .text {
@@ -113,8 +127,9 @@ h1 {
 }
 
 .container .contactInfo .box .text h3 {
-    font-weight: 500;
-    color: #ff0707;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #be0404; 
 }
 
 .contactForm {
@@ -174,22 +189,31 @@ h1 {
 }
 
 @media (max-width: 991px) {
+    a{
+        width: 0;
+        padding-right:60px;
+        padding-left: 5px;
+        
+    }
+    
     .contact {
         padding: 20px;
     }
 
     .container {
+        display: block;
         flex-direction: column;
         align-items: center;
     }
 
     nav ul {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     nav li {
-        margin: 10px 0;
+        width: 100%;
+        text-align: left;
     }
 }
 
