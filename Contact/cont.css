@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
-body{
+
+body {
     background-color: #666;
-    
+
 }
+
 header {
     background-color: rgb(235, 64, 21);
     display: flex;
@@ -43,16 +45,18 @@ a {
 
 
 a:hover {
-    background-color:  #c20d0d;
+    background-color: #c20d0d;
 }
-a.contacts{
+
+a.contacts {
     background-color: #c20d0d;
     transition: .5s;
-    
 }
-ion-icon{
-    padding-right:5px;
+
+ion-icon {
+    padding-right: 5px;
 }
+
 h2 {
     cursor: default;
     color: #080808;
@@ -63,13 +67,24 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+#mail{
+    margin: 0;
+    padding: 0;
+    
+}
+#mail:hover{
+    background-color: #080808;
+    padding: 10px;
+    border-radius: 8px;
+    color: #cc0404;
+}
 
 .contact {
     padding: 20px 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;  
-    background-color: #666;  
+    align-items: center;
+    background-color: #666;
 }
 
 .contact .content {
@@ -134,7 +149,7 @@ h1 {
 .container .contactInfo .box .text h3 {
     font-weight: 600;
     margin-bottom: 8px;
-    color: #be0404; 
+    color: #be0404;
 }
 
 .contactForm {
@@ -151,18 +166,21 @@ h1 {
     margin-bottom: 20px;
 }
 
-.contactForm .inputBox  {
+.contactForm .inputBox {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
 }
-#btn{
+
+#btn {
     cursor: pointer;
     background: red;
 }
-#btn:hover{
+
+#btn:hover {
     background-color: rgb(11, 144, 232);
 }
+
 .contactForm .inputBox input,
 .contactForm .inputBox textarea {
     width: 100%;
@@ -184,21 +202,25 @@ h1 {
     color: #666;
 }
 
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
     color: #e91e63;
     font-size: 12px;
     transform: translateY(-20px);
 }
 
 @media (max-width: 991px) {
-    a{
-        width: 0;
-        padding-right:60px;
-        padding-left: 5px;
-        
+    a {
+        margin: 5px;
+        padding: 8px 2px;
+        font-size: medium;
+    }
+
+    a.contacts {
+        background-color: #c20d0d;
+        transition: .5s;
     }
 
     .container {
@@ -208,14 +230,15 @@ h1 {
     }
 
     nav ul {
+        width: 120px;
         flex-direction: column;
         align-items: flex-start;
-        width: 100%;
+
     }
 
     nav li {
         width: 100%;
         text-align: left;
+        margin-left: 0px;
     }
 }
-
