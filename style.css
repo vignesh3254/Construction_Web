@@ -45,7 +45,7 @@ a {
 }
 
 a:hover {
-    color: rgb(240, 233, 233);
+    background-color:  #c20d0d;
 }
 
 a.home {
